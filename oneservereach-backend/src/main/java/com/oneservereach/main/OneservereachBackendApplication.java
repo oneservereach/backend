@@ -9,5 +9,4 @@ public class OneservereachBackendApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(OneservereachBackendApplication.class, args);
 	}
-//blash
 }
