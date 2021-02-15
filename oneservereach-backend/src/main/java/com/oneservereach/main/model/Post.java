@@ -3,6 +3,7 @@ package com.oneservereach.main.model;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Lob;
 import javax.persistence.Table;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -21,7 +22,8 @@ public class Post {
 	@Column(name = "author")
     private String author;
 	
-	@Column(name = "body")
+	@Lob
+	@Column(name = "body", length=512)
     private String body;
     
     public Post() {
